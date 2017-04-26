@@ -20,10 +20,10 @@ when defined(windows):
     libname = "libcurl.dll"
 elif defined(macosx):
   const
-    libname = "libcurl-7.19.3.dylib"
+    libname = "libcurl(|.4).dylib"
 elif defined(unix):
   const
-    libname = "libcurl.so.4"
+    libname = "libcurl.so(|.4)"
 type
   Pcalloc_callback* = ptr Calloc_callback
   Pclosepolicy* = ptr Closepolicy
